@@ -8,7 +8,7 @@ const NotFound = () => {
           <img src={notfound} alt='not-found' />
         </figure>
 
-        <button type='button' className='btn btn-primary fw-bold py-3 px-4'>
+        <button type='button' className='btn btn-primary fw-bold px-4'>
           Back to Home
         </button>
       </div>

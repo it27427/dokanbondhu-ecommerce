@@ -10,6 +10,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 import '@/assets/css/animate.css';
 import '@/assets/css/icofont.min.css';
 import '@/assets/css/magnific-popup.css';
+import '@/assets/css/style.min.css';
 
 // SWIPER CSS
 import 'swiper/css';
