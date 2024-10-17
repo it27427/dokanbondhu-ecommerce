@@ -13,6 +13,8 @@ export default defineConfig({
       components: `${path.resolve(__dirname, './src/components/')}`,
       public: `${path.resolve(__dirname, './public/')}`,
       pages: path.resolve(__dirname, './src/pages'),
+      assets: path.resolve(__dirname, './src/assets'),
+      layout: path.resolve(__dirname, './src/layout'),
     },
   },
 });
