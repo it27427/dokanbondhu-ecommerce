@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --bodybg: #f6f7f8;
+  --bodycolor: #333333;
+  --opensans: 'Open Sans', sans-serif;
+}
+
+// Variables for SCSS
+$bodybg: var(--bodybg);
+$bodytext: var(--bodycolor);
+$blackcolor: var(--black);
+$whitecolor: var(--white);
+$themefont: var(--opensans);
+
+// Mixin for background and text color
+@mixin bg-and-color($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+// Resetting styles for elements
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+// Styles for body
+body {
+  @include bg-and-color($bodybg, $bodytext);
+  font-family: $themefont;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+section,
+article,
+table,
+img {
+  margin: 0;
+}
+
+// Heading styles
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
