@@ -1,7 +1,17 @@
+import notfound from '@/assets/images/errors/notfound.svg';
+
 const NotFound = () => {
   return (
     <>
-      <h2>Not Found Component</h2>
+      <div className='flexcentercol'>
+        <figure className='notfoundthumb'>
+          <img src={notfound} alt='not-found' />
+        </figure>
+
+        <button type='button' className='btn-primary'>
+          Back to Home
+        </button>
+      </div>
     </>
   );
 };
