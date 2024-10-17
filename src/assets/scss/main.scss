@@ -93,8 +93,15 @@ h5 {
 }
 
 .notfoundthumb {
-  width: 20rem;
-  height: 20rem;
+  width: 18.75rem;
+  height: 18.75rem;
   @extend %flexcenter;
   overflow: hidden;
+}
+
+.from-control:focus,
+.from-select:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
