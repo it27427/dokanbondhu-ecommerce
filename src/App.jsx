@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 /* IMPORT-COMPONENTS */
 import Header from '@/components/Header';
@@ -11,13 +11,16 @@ import BlogPage from '@/pages/Blog';
 import NotFoundPage from '@/pages/Error';
 
 const App = () => {
+  const location = useLocation();
+  const isNotFoundPage = location.pathname === '/*';
+
   return (
     <>
       {/* IF PAGE NOT-FOUND HIDE HEADER */}
-      {window.location.pathname === '/*' ? <Header /> : null}
+      {!isNotFoundPage && <Header />}
 
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route exact path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
 
@@ -25,8 +28,7 @@ const App = () => {
         <Route path='/*' element={<NotFoundPage />} />
       </Routes>
 
-      {/* IF PAGE NOT-FOUND HIDE FOOTER */}
-      {window.location.pathname === '/*' ? <Footer /> : null}
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <main>
+    <main className='main-section'>
       <h2>This is About Page</h2>
     </main>
   );

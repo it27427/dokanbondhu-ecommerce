@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import notfound from '@/assets/images/errors/notfound.svg';
 
 const NotFound = () => {
@@ -8,9 +9,9 @@ const NotFound = () => {
           <img src={notfound} alt='not-found' />
         </figure>
 
-        <button type='button' className='btn btn-primary fw-bold px-4'>
+        <Link to='/' className='btn btn-primary text-white fw-bold px-4'>
           Back to Home
-        </button>
+        </Link>
       </div>
     </>
   );
