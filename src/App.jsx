@@ -8,19 +8,25 @@ import Footer from '@/components/Footer';
 import HomePage from '@/pages/Home';
 import AboutPage from '@/pages/About';
 import BlogPage from '@/pages/Blog';
+import NotFoundPage from '@/pages/Error';
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* IF PAGE NOT-FOUND HIDE HEADER */}
+      {window.location.pathname === '/*' ? <Header /> : null}
 
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
+
+        {/* NOT-FOUND PAGE */}
+        <Route path='/*' element={<NotFoundPage />} />
       </Routes>
 
-      <Footer />
+      {/* IF PAGE NOT-FOUND HIDE FOOTER */}
+      {window.location.pathname === '/*' ? <Footer /> : null}
     </>
   );
 };
