@@ -136,10 +136,18 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  background: rebeccapurple;
 }
 
 .desktopmenu {
   display: flex;
   align-items: center;
+}
+
+.btn-hamburger {
+  background: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
