@@ -92,6 +92,13 @@ h5 {
   font-weight: 700;
 }
 
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .notfoundthumb {
   width: 18.75rem;
   height: 18.75rem;
@@ -127,6 +134,12 @@ header {
 
 .headernav {
   height: 100%;
+  display: flex;
+  align-items: center;
+  background: rebeccapurple;
+}
+
+.desktopmenu {
   display: flex;
   align-items: center;
 }
