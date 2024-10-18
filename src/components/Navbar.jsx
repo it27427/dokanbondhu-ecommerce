@@ -9,7 +9,9 @@ const Navbar = () => {
       <div className='container'>
         <div className='d-flex align-items-center justify-content-between'>
           {/* MOBILE-MENU */}
-          <HamburgerMenu />
+          <div className='d-lg-none d-block'>
+            <HamburgerMenu />
+          </div>
 
           {/* BRAND-LOGO */}
           <BrandLogo />
