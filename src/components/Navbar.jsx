@@ -2,6 +2,7 @@ import BrandLogo from './BrandLogo';
 import DesktopMenu from './DesktopMenu';
 import HamburgerMenu from './HamburgerMenu';
 import SignUpMenu from './SignUpMenu';
+import UserDropdown from './UserDropdown';
 
 const Navbar = () => {
   return (
@@ -19,6 +20,11 @@ const Navbar = () => {
           {/* DESKTOP-MENU */}
           <div className='d-none d-lg-block'>
             <DesktopMenu />
+          </div>
+
+          {/* MOBILE-AUTHENTICATION-MENU */}
+          <div className='d-lg-none d-block'>
+            <UserDropdown />
           </div>
 
           {/* DESKTOP-AUTHENTICATION-MENU */}
