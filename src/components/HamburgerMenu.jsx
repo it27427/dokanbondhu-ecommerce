@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
         data-bs-target='#mobileMenu'
         aria-controls='mobileMenu'
       >
-        <i className='icofont-menu'></i>
+        <i className='icofont-duotone icofont-menu'></i>
       </button>
 
       <div className='offcanvas offcanvas-start' tabIndex='-1' id='mobileMenu'>

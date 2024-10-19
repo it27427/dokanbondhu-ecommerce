@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
 
           {/* DESKTOP-AUTHENTICATION-MENU */}
-          <div className='d-none d-md-block'>
+          <div className='d-none d-lg-block'>
             <SignUpMenu />
           </div>
         </div>
