@@ -427,6 +427,26 @@ header {
   color: $primarycolor;
 }
 
+.cate-icon .icofont-duotone {
+  font-size: 1.25rem;
+}
+
+.cate-icon .icofont-duotone::before {
+  position: static;
+}
+
+.cate-icon .icofont-duotone::after {
+  content: '';
+}
+
+.category-section.style-4 .section-wrapper .lab-btn {
+  border-color: $primarycolor;
+}
+
+.category-section.style-4 .section-wrapper .lab-btn:hover {
+  box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;
