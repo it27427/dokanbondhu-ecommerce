@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const title = 'Our Products';
 
@@ -117,6 +118,29 @@ const CategoryShowCase = () => {
                 Shoes
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* SECTION-BODY */}
+        <div className='section-wrapper'>
+          <div className='row g-4 justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1'>
+            {items.map((product) => (
+              <div key={product.id} className='col'>
+                <Link to='/shop' className='course-item style-4'>
+                  <div className='course-inner'>
+                    <figure className='course-thumb'>
+                      <img src={product.imgUrl} alt={product.title} />
+                    </figure>
+                    <div className='course-category'>
+                      <div className='course-cate'>
+                        <span>{product.cate}</span>
+                      </div>
+                      <div className='course-review'></div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
