@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Parallax } from 'swiper/modules';
+import productsData from '@/db/products.json';
+import { Link } from 'react-router-dom';
 
 const title = (
   <h2>
@@ -29,43 +29,52 @@ const bannerList = [
 
 const Hero = () => {
   const [searchInput, setSearchInput] = useState('');
-  const [filteredProducts, setFilteredProducts] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(productsData);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const searchTerm = e.target.value;
+    setSearchInput(searchTerm);
+
+    // FILTERING PRODUCT BASED ON SEARCH
+    const filtered = productsData.filter((product) =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setFilteredProducts(filtered);
+  };
 
   return (
     <section className='banner-section style-4'>
-      <div className='container d-none'>
-        <Swiper
-          modules={[Autoplay, Navigation, Parallax]}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          centeredSlides={true}
-          spaceBetween={0}
-          slidesPerView={1}
-          navigation={true}
-          loop={true}
-          parallax={true}
-          data-swiper-parallax='-23%'
-        >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-        </Swiper>
-      </div>
-
       <div className='container'>
-        <div className='banner-content'>{title}</div>
+        <div className='banner-content'>
+          {title}
 
-        <form>
-          <input
-            type='search'
-            name='search'
-            id='search'
-            placeholder='Search your product'
-            value={searchInput}
-          />
-        </form>
+          <form>
+            <input
+              type='search'
+              name='search'
+              id='search'
+              placeholder='Search your product'
+              value={searchInput}
+              onChange={handleSearch}
+            />
+            <button type='submit'>
+              <i className='icofont-duotone icofont-search'></i>
+            </button>
+          </form>
+
+          <p>{description}</p>
+
+          <ul className='lab-ul'>
+            {searchInput &&
+              filteredProducts.map((product) => (
+                <li key={product.id}>
+                  <Link to={`/shop/${product.id}`}>{product.name}</Link>
+                </li>
+              ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
