@@ -14,9 +14,9 @@ const SelectedCategory = (select) => {
         <option value='personal-care'>Personal Care</option>
         <option value='butcher-shop'>Butcher Shop</option>
         <option value='cafe'>Cafe</option>
-        <option value='charity-2'>Charity</option>
+        <option value='charity'>Charity</option>
         <option value='church'>Church</option>
-        <option value='clinic'>clinic</option>
+        <option value='clinic'>Clinic</option>
         <option value='college'>College</option>
         <option value='conference'>Conference</option>
         <option value='construction'>Construction</option>
@@ -24,7 +24,7 @@ const SelectedCategory = (select) => {
         <option value='corporate'>Corporate</option>
         <option value='covid19'>Covid19</option>
         <option value='digital-products'>Digital Products</option>
-        <option value='doctors'>doctors</option>
+        <option value='doctors'>Doctors</option>
         <option value='ecological'>Ecological</option>
         <option value='education'>Education</option>
         <option value='entertainment'>Entertainment</option>
@@ -37,10 +37,10 @@ const SelectedCategory = (select) => {
         <option value='gym'>Gym</option>
         <option value='halloween'>Halloween</option>
         <option value='health'>health</option>
-        <option value='healthcare'>healthcare</option>
-        <option value='learnpress'>learnpress</option>
+        <option value='healthcare'>Healthcare</option>
+        <option value='learnpress'>Learnpress</option>
         <option value='meat-shop'>Meat Shop</option>
-        <option value='medical'>medical</option>
+        <option value='medical'>Medical</option>
         <option value='medical-prevention'>Medical Prevention</option>
         <option value='meetup'>Meetup</option>
         <option value='mobile-apps'>Mobile Apps</option>
@@ -52,8 +52,8 @@ const SelectedCategory = (select) => {
         <option value='personal-blog'>Personal Blog</option>
         <option value='portfolio'>Portfolio</option>
         <option value='pregnancy'>pregnancy</option>
-        <option value='premium'>premium</option>
-        <option value='psd'>psd</option>
+        <option value='premium'>Premium</option>
+        <option value='psd'>PSD</option>
         <option value='religion'>Religion</option>
         <option value='restaurants'>Restaurants</option>
         <option value='school'>School</option>

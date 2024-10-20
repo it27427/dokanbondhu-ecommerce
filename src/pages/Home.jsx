@@ -1,12 +1,15 @@
 import Hero from '@/components/Hero';
+import HomeCategory from '@/components/HomeCategory';
 
 const HomePage = () => {
   return (
     <>
       <main className='main-section'>
-        {/* HERO-SECTION-START */}
+        {/* HERO-SECTION */}
         <Hero />
-        {/* HERO-SECTION-END */}
+
+        {/* HOME-CATEGORY */}
+        <HomeCategory />
       </main>
     </>
   );
