@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import productsData from '@/db/products.json';
 import { Link } from 'react-router-dom';
+import productsData from '@/db/products.json';
+
 import SelectedCategory from './SelectedCategory';
 
 const title = (

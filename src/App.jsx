@@ -2,8 +2,8 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import ScrollToTop from 'react-scroll-to-top';
 
 /* IMPORT-COMPONENTS */
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/global/Header';
+import Footer from '@/components/global/Footer';
 
 /* IMPORT-PAGES */
 import HomePage from '@/pages/Home';

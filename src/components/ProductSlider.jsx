@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Parallax } from 'swiper/modules';
 
-const FullScreenSlider = () => {
+const ProductSlider = () => {
   return (
     <section>
       <div className='container'>
@@ -28,4 +28,4 @@ const FullScreenSlider = () => {
   );
 };
 
-export default FullScreenSlider;
+export default ProductSlider;

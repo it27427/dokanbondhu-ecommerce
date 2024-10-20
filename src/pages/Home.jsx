@@ -1,6 +1,7 @@
-import Hero from '@/components/Hero';
-import HomeCategory from '@/components/HomeCategory';
-import CategoryShowCase from '@/components/CategoryShowCase';
+import Hero from '@/components/home/Hero';
+import HomeCategory from '@/components/home/HomeCategory';
+import CategoryShowCase from '@/components/home/CategoryShowCase';
+import HomeRegister from '@/components/home/HomeRegister';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,9 @@ const HomePage = () => {
 
         {/* CATEGORY-SHOWCASE */}
         <CategoryShowCase />
+
+        {/* HOME-REGISTER */}
+        <HomeRegister />
       </main>
     </>
   );
