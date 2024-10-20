@@ -52,7 +52,7 @@ const Hero = () => {
           {title}
 
           <form>
-            <SelectedCategory />
+            <SelectedCategory select='all' />
             <input
               type='search'
               name='search'
