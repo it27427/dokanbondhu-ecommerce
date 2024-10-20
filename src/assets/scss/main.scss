@@ -5,6 +5,7 @@
   --black: #000000;
   --bodybg: #f6f7f8;
   --bodycolor: #333333;
+  --textcolor: #101115;
   --themecolor: #ee7006;
 
   --opensans: 'Open Sans', sans-serif;
@@ -17,6 +18,7 @@ $blackcolor: var(--black);
 $whitecolor: var(--white);
 $themefont: var(--opensans);
 $primarycolor: var(--themecolor);
+$primarytext: var(--textcolor);
 
 // Mixin for background and text color
 @mixin bg-and-color($bg-color, $text-color) {
@@ -44,6 +46,10 @@ $primarycolor: var(--themecolor);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::selection {
+  @include bg-and-color($primarytext, $primarycolor);
 }
 
 html {
