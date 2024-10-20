@@ -1,8 +1,14 @@
+import Hero from '@/components/Hero';
+
 const HomePage = () => {
   return (
-    <main className='main-section'>
-      <h2>This is Home Page</h2>
-    </main>
+    <>
+      <main className='main-section'>
+        {/* HERO-SECTION-START */}
+        <Hero />
+        {/* HERO-SECTION-END */}
+      </main>
+    </>
   );
 };
 

@@ -14,6 +14,8 @@ import '@/assets/css/style.min.css';
 
 // SWIPER CSS
 import 'swiper/css';
+import 'swiper/css/navigation';
+
 // CUSTOM CSS
 import '@/assets/scss/main.scss';
 
