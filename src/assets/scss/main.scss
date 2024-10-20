@@ -453,6 +453,16 @@ header {
   box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
 }
 
+.scroll-to-top {
+  @extend %flexcenter;
+  background: $primarycolor;
+  padding: 0.625rem;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;

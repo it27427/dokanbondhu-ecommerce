@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from 'react-scroll-to-top';
 
 /* IMPORT-COMPONENTS */
 import Header from '@/components/Header';
@@ -29,6 +30,8 @@ const App = () => {
       </Routes>
 
       <Footer />
+
+      <ScrollToTop smooth width={24} height={24} />
     </>
   );
 };
