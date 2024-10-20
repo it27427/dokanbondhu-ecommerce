@@ -463,6 +463,34 @@ header {
   box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
 }
 
+.category-thumb {
+  min-height: 14.6875rem;
+  max-height: 14.6875rem;
+  overflow: hidden;
+}
+
+.category-thumb img {
+  transition: transform 400ms ease-in-out;
+}
+
+.category-item {
+  transition: all 400ms ease-in-out;
+}
+
+.category-item:hover .category-thumb img {
+  transform: scale(1.09);
+}
+
+.course-section.style-3 .section-header .course-filter-group ul li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-header {
+  position: relative;
+  z-index: 100;
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;

@@ -80,10 +80,45 @@ const ProductData = [
 const CategoryShowCase = () => {
   const [items, setItems] = useState(ProductData);
 
+  // CATEGORY BASED FILTERING
+  const filterItem = () => {};
+
   return (
     <section className='course-section style-3 padding-tb'>
+      {/* SECTION-SHAPES */}
+      <figure className='course-shape one'>
+        <img src='/src/assets/images/shape-img/icon/01.png' alt='shape-img-1' />
+      </figure>
+      <figure className='course-shape two'>
+        <img src='/src/assets/images/shape-img/icon/02.png' alt='shape-img-1' />
+      </figure>
+
+      {/* MAIN-CONTENT */}
       <div className='container'>
-        <h2>{title}</h2>
+        {/* SECTION-HEADER */}
+        <div className='section-header'>
+          <h2 className='title'>{title}</h2>
+
+          <div className='course-filter-group'>
+            <ul className='lab-ul'>
+              <li role='button' onClick={() => filterItem('All')}>
+                All
+              </li>
+              <li role='button' onClick={() => filterItem('Bags')}>
+                Bags
+              </li>
+              <li role='button' onClick={() => filterItem('Beauty')}>
+                Beauty
+              </li>
+              <li role='button' onClick={() => filterItem('Phone')}>
+                Phone
+              </li>
+              <li role='button' onClick={() => filterItem('Shoes')}>
+                Shoes
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
