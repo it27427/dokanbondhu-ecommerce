@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import productsData from '@/db/products.json';
 import { Link } from 'react-router-dom';
+import SelectedCategory from './SelectedCategory';
 
 const title = (
   <h2>
@@ -51,6 +52,7 @@ const Hero = () => {
           {title}
 
           <form>
+            <SelectedCategory />
             <input
               type='search'
               name='search'

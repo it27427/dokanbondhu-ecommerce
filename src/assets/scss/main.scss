@@ -135,6 +135,10 @@ header {
   height: 4rem;
 }
 
+.header-fixed {
+  background: $whitecolor;
+}
+
 .headernav {
   height: 100%;
   display: flex;
@@ -291,4 +295,15 @@ header {
 
 .banner-section.style-4 .banner-content h2 span {
   color: $primarycolor;
+}
+
+@media screen and (min-width: 62rem) {
+  header {
+    height: 5rem;
+  }
+
+  .banner-section.style-4 {
+    padding-top: 13.4375rem;
+    padding-bottom: 13.4375rem;
+  }
 }
