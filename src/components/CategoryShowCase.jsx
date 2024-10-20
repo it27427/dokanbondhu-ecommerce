@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 const title = 'Our Products';
 
@@ -78,8 +78,10 @@ const ProductData = [
 ];
 
 const CategoryShowCase = () => {
+  const [items, setItems] = useState(ProductData);
+
   return (
-    <section className=''>
+    <section className='course-section style-3 padding-tb'>
       <div className='container'>
         <h2>{title}</h2>
       </div>
