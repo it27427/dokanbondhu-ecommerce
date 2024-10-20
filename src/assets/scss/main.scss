@@ -287,7 +287,8 @@ header {
   ul
   li
   .price,
-.yellow-color-section .section-header .course-navi {
+.yellow-color-section .section-header .course-navi,
+.course-item.style-4 .course-inner .course-thumb .course-category {
   background: $primarycolor;
 }
 
@@ -457,6 +458,9 @@ header {
   @extend %flexcenter;
   background: $primarycolor;
   padding: 0.625rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 100;
 }
 
 .scroll-to-top:hover {
@@ -486,9 +490,10 @@ header {
   padding-bottom: 0.5rem;
 }
 
-.section-header {
+.section-header,
+.course-item {
   position: relative;
-  z-index: 100;
+  z-index: 50;
 }
 
 @media screen and (min-width: 62rem) {

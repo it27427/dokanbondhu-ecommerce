@@ -1,8 +1,12 @@
 const Rating = () => {
   return (
-    <>
-      <h2>Rating</h2>
-    </>
+    <span className='ratting'>
+      <i className='icofont-ui-rating'></i>
+      <i className='icofont-ui-rating'></i>
+      <i className='icofont-ui-rating'></i>
+      <i className='icofont-ui-rating'></i>
+      <i className='icofont-ui-rating'></i>
+    </span>
   );
 };
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Rating from './Rating';
 
 const title = 'Our Products';
 
@@ -82,7 +83,13 @@ const CategoryShowCase = () => {
   const [items, setItems] = useState(ProductData);
 
   // CATEGORY BASED FILTERING
-  const filterItem = () => {};
+  const filterItem = (ctgItem) => {
+    const updatedItems = ProductData.filter((currEl) => {
+      return currEl.cate === ctgItem;
+    });
+
+    setItems(updatedItems);
+  };
 
   return (
     <section className='course-section style-3 padding-tb'>
@@ -102,7 +109,7 @@ const CategoryShowCase = () => {
 
           <div className='course-filter-group'>
             <ul className='lab-ul'>
-              <li role='button' onClick={() => filterItem('All')}>
+              <li role='button' onClick={() => setItems(ProductData)}>
                 All
               </li>
               <li role='button' onClick={() => filterItem('Bags')}>
@@ -111,8 +118,8 @@ const CategoryShowCase = () => {
               <li role='button' onClick={() => filterItem('Beauty')}>
                 Beauty
               </li>
-              <li role='button' onClick={() => filterItem('Phone')}>
-                Phone
+              <li role='button' onClick={() => filterItem('Phones')}>
+                Phones
               </li>
               <li role='button' onClick={() => filterItem('Shoes')}>
                 Shoes
@@ -123,22 +130,40 @@ const CategoryShowCase = () => {
 
         {/* SECTION-BODY */}
         <div className='section-wrapper'>
-          <div className='row g-4 justify-content-center row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1'>
+          <div className='row g-4 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 course-filter'>
             {items.map((product) => (
-              <div key={product.id} className='col'>
-                <Link to='/shop' className='course-item style-4'>
-                  <div className='course-inner'>
+              <div key={product.id} className='col h-100'>
+                <div className='course-item style-4 h-100'>
+                  <div className='course-inner h-100'>
                     <figure className='course-thumb'>
                       <img src={product.imgUrl} alt={product.title} />
-                    </figure>
-                    <div className='course-category'>
-                      <div className='course-cate'>
-                        <span>{product.cate}</span>
+                      <div className='course-category'>
+                        <div className='course-cate'>
+                          <span>{product.cate}</span>
+                        </div>
+                        <div className='course-review'>
+                          <Rating />
+                        </div>
                       </div>
-                      <div className='course-review'></div>
+                    </figure>
+
+                    <div className='course-content h-100 pb-3'>
+                      <Link to={`/shop/${product.id}`}>
+                        <h5>{product.title}</h5>
+                      </Link>
+
+                      <div className='course-footer'>
+                        <div className='course-author'>
+                          <Link to={`/`} className='ca-name'>
+                            {product.brand}
+                          </Link>
+                        </div>
+
+                        <p className='course-price'>{product.price}</p>
+                      </div>
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
             ))}
           </div>
