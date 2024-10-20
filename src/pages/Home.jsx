@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import HomeCategory from '@/components/HomeCategory';
+import CategoryShowCase from '@/components/CategoryShowCase';
 
 const HomePage = () => {
   return (
@@ -10,6 +11,9 @@ const HomePage = () => {
 
         {/* HOME-CATEGORY */}
         <HomeCategory />
+
+        {/* CATEGORY-SHOWCASE */}
+        <CategoryShowCase />
       </main>
     </>
   );
