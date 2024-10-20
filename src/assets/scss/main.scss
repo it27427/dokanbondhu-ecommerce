@@ -82,7 +82,8 @@ p,
 section,
 article,
 table,
-img {
+img,
+hgroup {
   margin: 0;
 }
 
@@ -282,6 +283,135 @@ header {
   .price,
 .yellow-color-section .section-header .course-navi {
   background: $primarycolor;
+}
+
+.choose-section .section-header ul li i,
+.register-section .section-header .subtitle,
+.feature-section.style-3
+  .section-wrapper
+  .feature-item
+  .feature-inner
+  .feature-content
+  .lab-btn-text:hover,
+.feature-section.style-2
+  .section-wrapper
+  .feature-item
+  .feature-inner
+  .feature-icon,
+.feature-section.style-2
+  .section-wrapper
+  .feature-item
+  .feature-inner:hover
+  .feature-content
+  h5,
+.instructor-section.style-3
+  .section-wrapper
+  .instructor-bottom
+  .instructor-item:hover
+  .instructor-inner
+  .instructor-content
+  h5,
+.offer-section .section-wrapper .date li .count-title,
+.offer-section .section-wrapper .title span,
+.contact-info-section
+  .section-wrapper
+  .cinfo-item
+  .cinfo-inner
+  .cinfo-content
+  h6,
+.contact-info-section .section-header .title span,
+.video-section .section-wrapper .video-thumb a i,
+.category-section.style-4
+  .section-wrapper
+  .category-item
+  .category-inner:hover
+  .category-content
+  h6,
+.category-section.style-4 .section-header .subtitle,
+.banner-section.style-6 .section-wrapper .banner-content .subtitle,
+.banner-section.style-4 .banner-content ul li i,
+.banner-section.style-4 .banner-content h2 span,
+.header-section.style-7 .header-bottom .header-wrapper .menu-area .login,
+.header-section.style-5 .header-bottom .menu > ul > li.active > a,
+.instructor-item.style-2 .instructor-inner .instructor-content .ins-info li i,
+.instructor-item.style-2:hover .instructor-inner .instructor-content h4,
+.course-item.style-5 .course-inner .course-content .course-footer .ratting,
+.course-item.style-5 .course-inner:hover .course-content h5,
+.course-item.style-4
+  .course-inner
+  .course-content
+  .course-footer
+  .ca-name:hover,
+.course-item.style-4 .course-inner .course-content .course-footer .course-price,
+.course-item.style-4 .course-inner:hover .course-content h5,
+.yellow-color-section
+  .post-item.style-3
+  .post-inner
+  .post-content
+  .meta-post
+  ul
+  li
+  i,
+.yellow-color-section .post-item.style-3 .post-inner:hover .post-content h4,
+.yellow-color-section.style-2
+  .footer-bottom
+  .section-wrapper
+  .footer-bottom-list
+  a:hover,
+.yellow-color-section.style-2 .footer-bottom .section-wrapper p a:hover,
+.yellow-color-section.style-2
+  .footer-top
+  .footer-item.twitter-post
+  .footer-inner
+  .footer-content
+  .content
+  ul
+  li
+  a,
+.yellow-color-section.style-2
+  .footer-top
+  .footer-item.our-address
+  .footer-inner
+  .footer-content
+  .content
+  .office-address
+  li
+  i,
+.yellow-color-section
+  .section-wrapper
+  .course-item.style-3
+  .course-inner
+  .course-content
+  .course-details
+  .couse-count
+  i,
+.yellow-color-section
+  .section-wrapper
+  .course-item.style-3
+  .course-inner
+  .course-content
+  .course-details
+  .couse-topic
+  i,
+.yellow-color-section
+  .section-wrapper
+  .course-item.style-3
+  .course-inner
+  .course-thumb
+  ul
+  li
+  .ratting,
+.yellow-color-section
+  .section-wrapper
+  .course-item.style-3
+  .course-inner:hover
+  .course-content
+  h4,
+.lab-btn-text.yellow-color:hover,
+.lab-btn-text.yellow-color i,
+.yellow-color,
+.section-header .subtitle.yellow-color {
+  color: $primarycolor;
 }
 
 .header-section.style-4 .lab-btn:hover {
