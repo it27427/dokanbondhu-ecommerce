@@ -2,7 +2,7 @@ import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 const title = 'About DokanBondhu';
 const desc =
-  'Eduaid theme number one world class university in the world There are student are studing always in this university for all time.';
+  'DokanBondhu theme number one world class university in the world There are student are studing always in this university for all time.';
 const ItemTitle = 'Categories';
 const quickTitle = 'Quick Links';
 const tweetTitle = 'Recent Tweets';
@@ -11,17 +11,17 @@ const addressList = [
   {
     id: 1,
     iconName: 'icofont-google-map',
-    text: ' New York, USA.',
+    text: ' Mohammadpur, Dhaka, Bangladesh.',
   },
   {
     id: 2,
     iconName: 'icofont-phone',
-    text: ' +880 123 456 789',
+    text: ' +880 123 4567 8910',
   },
   {
     id: 3,
     iconName: 'icofont-envelope',
-    text: ' info@shopcart.com',
+    text: ' info@dokanbondhu.com',
   },
 ];
 
@@ -140,8 +140,8 @@ const tweetList = [
     iconName: 'icofont-twitter',
     desc: (
       <p>
-        Aminur islam <a href='#'>@ShopCart Greetings! #HTML_Template</a> Grab
-        your item, 50% Big Sale Offer !!
+        Aminur islam <a href='#'>@DokanBondhu Greetings!</a> Grab your item, 50%
+        Big Sale Offer !!
       </p>
     ),
   },
@@ -150,8 +150,8 @@ const tweetList = [
     iconName: 'icofont-twitter',
     desc: (
       <p>
-        Somrat islam <a href='#'>@ShopCart Hey! #HTML_Template</a> Grab your
-        item, 50% Big Sale Offer !!
+        Somrat islam <a href='#'>@DokanBondhu Hey!</a> Grab your item, 60% Big
+        Sale Offer !!
       </p>
     ),
   },
@@ -181,11 +181,13 @@ const footerbottomList = [
 ];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className='style-2'>
       <div className='footer-top dark-view padding-tb'>
         <div className='container'>
-          <div className='row'>
+          <div className='row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content-center'>
             <div className='col'>
               <div className='footer-item our-address'>
                 <div className='footer-inner'>
@@ -197,7 +199,7 @@ const Footer = () => {
                       <p>{desc}</p>
                       <ul className='lab-ul office-address'>
                         {addressList.map((address) => (
-                          <li key={address.id}>
+                          <li key={address.id} className='mb-1'>
                             <i className={address.iconName}></i> {address.text}
                           </li>
                         ))}
@@ -230,30 +232,14 @@ const Footer = () => {
                 <div className='footer-inner'>
                   <div className='footer-content'>
                     <div className='title'>
-                      <h4>{quickTitle}</h4>
+                      <h4>{ItemTitle}</h4>
                     </div>
                     <div className='content'>
-                      <p>{desc}</p>
                       <ul className='lab-ul office-address'>
-                        {addressList.map((address) => (
-                          <li key={address.id}>
-                            <i className={address.iconName}></i> {address.text}
-                          </li>
-                        ))}
-                      </ul>
-                      <ul className='lab-ul social-icons'>
-                        {socialList.map((social) => (
-                          <li key={social.id}>
-                            <a
-                              href={social.href}
-                              className={social.className}
-                              target={social.target}
-                              data-tooltip-id={social.id}
-                              data-tooltip-content={social.title}
-                              data-tooltip-place='top'
-                              title={social.title}
-                            >
-                              <i className={`mt-0 ${social.iconName}`}></i>
+                        {ItemList.map((item) => (
+                          <li key={item.id}>
+                            <a href={item.href} className='mb-2'>
+                              {item.text}
                             </a>
                           </li>
                         ))}
@@ -262,6 +248,69 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className='col'>
+              <div className='footer-item our-address'>
+                <div className='footer-inner'>
+                  <div className='footer-content'>
+                    <div className='title'>
+                      <h4>{quickTitle}</h4>
+                    </div>
+                    <div className='content'>
+                      <ul className='lab-ul office-address'>
+                        {quickList.map((quick) => (
+                          <li key={quick.id}>
+                            <a href={quick.href} className='mb-2'>
+                              {quick.text}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='col'>
+              <div className='footer-item our-address'>
+                <div className='footer-inner'>
+                  <div className='footer-content'>
+                    <div className='title'>
+                      <h4>{tweetTitle}</h4>
+                    </div>
+                    <div className='content'>
+                      <ul className='lab-ul office-address'>
+                        {tweetList.map((tweet) => (
+                          <li key={tweet.id}>
+                            <i className={tweet.iconName}></i> {tweet.desc}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='footer-bottom'>
+        <div className='container'>
+          <div className='section-wrapper'>
+            <p>
+              &copy; {currentYear} <strong>DokanBondhu</strong> &mdash; All
+              Rights Reserved.
+            </p>
+
+            <div className='footer-bottom-list'>
+              {footerbottomList.map((list) => (
+                <a href={list.href} key={list.id}>
+                  {list.text}
+                </a>
+              ))}
             </div>
           </div>
         </div>

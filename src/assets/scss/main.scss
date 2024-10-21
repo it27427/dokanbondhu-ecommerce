@@ -528,7 +528,9 @@ header {
   position: static;
 }
 
-
+footer.style-2 .footer-top .footer-item .footer-inner .footer-content .content ul li a:hover {
+  color: $primarycolor !important;
+}
 
 @media screen and (min-width: 62rem) {
   header {
