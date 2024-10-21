@@ -524,6 +524,12 @@ header {
   box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
 }
 
+.footer-top .footer-item.our-address .footer-inner .footer-content .content ul li i::before {
+  position: static;
+}
+
+
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;
