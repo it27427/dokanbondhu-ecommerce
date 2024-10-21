@@ -1,3 +1,5 @@
+import CountUp from 'react-countup';
+
 const subTitle = 'Why Choose Us';
 const title = 'Become a Marchant';
 const desc =
@@ -6,16 +8,19 @@ const btnText = 'Apply Now';
 
 const countList = [
   {
+    id: 1,
     iconName: 'icofont-duotone icofont-users-alt-4',
     count: '12600',
     text: 'Marchant Enrolled',
   },
   {
+    id: 2,
     iconName: 'icofont-duotone icofont-graduate-alt',
     count: '30',
     text: 'Certified Courses',
   },
   {
+    id: 3,
     iconName: 'icofont-duotone icofont-notification',
     count: '100',
     text: 'Rewards and GitCards',
@@ -24,9 +29,34 @@ const countList = [
 
 const HomeAbout = () => {
   return (
-    <section className=''>
+    <section className='instructor-section style-2 padding-tb section-bg-ash'>
       <div className='container'>
-        <h2>Home About</h2>
+        <div className='section-wrapper'>
+          <div className='row'>
+            <div className='col'>
+              {countList.map((counter) => (
+                <div key={counter.id} className='count-item'>
+                  <div className='count-inner'>
+                    <div className='count-icon'>
+                      <i className={`${counter.iconName}`}></i>
+                    </div>
+                    <div className='count-content'>
+                      <h2>
+                        <span className='count'>
+                          <CountUp end={counter.count} />
+                          <span>+</span>
+                        </span>
+                      </h2>
+                      <p>{counter.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className='col'></div>
+            <div className='col'></div>
+          </div>
+        </div>
       </div>
     </section>
   );

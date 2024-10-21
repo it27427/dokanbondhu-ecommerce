@@ -504,6 +504,18 @@ header {
   border-color: $primarycolor;
 }
 
+.count-item .count-inner .count-icon i::before {
+  position: static;
+}
+
+.count-item:last-child .count-inner .count-icon i::after {
+  content: '';
+}
+
+.icofont-duotone.icofont-notification::before {
+  content: '\efac';
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;
