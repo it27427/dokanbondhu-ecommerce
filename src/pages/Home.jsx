@@ -8,30 +8,28 @@ import AppSection from '@/components/home/AppSection';
 
 const HomePage = () => {
   return (
-    <>
-      <main className='main-section'>
-        {/* HERO-SECTION */}
-        <Hero />
+    <main className='main-section'>
+      {/* HERO-SECTION */}
+      <Hero />
 
-        {/* HOME-CATEGORY */}
-        <HomeCategory />
+      {/* HOME-CATEGORY */}
+      <HomeCategory />
 
-        {/* CATEGORY-SHOWCASE */}
-        <CategoryShowCase />
+      {/* CATEGORY-SHOWCASE */}
+      <CategoryShowCase />
 
-        {/* HOME-REGISTER */}
-        <HomeRegister />
+      {/* HOME-REGISTER */}
+      <HomeRegister />
 
-        {/* LOCATION-SPREAD */}
-        <LocationSpread />
+      {/* LOCATION-SPREAD */}
+      <LocationSpread />
 
-        {/* ABOUT-SECTION */}
-        <HomeAbout />
+      {/* ABOUT-SECTION */}
+      <HomeAbout />
 
-        {/* APP-SECTION */}
-        <AppSection />
-      </main>
-    </>
+      {/* APP-SECTION */}
+      <AppSection />
+    </main>
   );
 };
 
