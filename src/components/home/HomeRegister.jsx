@@ -23,7 +23,7 @@ const HomeRegister = () => {
 
               {title}
 
-              <p>{description}</p>
+              <p className='pt-3'>{description}</p>
             </div>
           </div>
 
