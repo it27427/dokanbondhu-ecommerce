@@ -9,7 +9,7 @@ const NotFound = () => {
           <img src={notfound} alt='not-found' />
         </figure>
 
-        <Link to='/' className='btn btn-primary text-white fw-bold px-4'>
+        <Link to='/' className='lab-btn'>
           Back to Home
         </Link>
       </div>
