@@ -516,6 +516,14 @@ header {
   content: '\efac';
 }
 
+.app-section .section-header .lab-btn {
+  border-color: $primarycolor;
+}
+
+.app-section .section-header .lab-btn:hover {
+  box-shadow: 0 0.3125rem 0.625rem rgba(238, 112, 6, 0.5);
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;
