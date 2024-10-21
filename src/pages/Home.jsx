@@ -4,6 +4,7 @@ import CategoryShowCase from '@/components/home/CategoryShowCase';
 import HomeRegister from '@/components/home/HomeRegister';
 import LocationSpread from '@/components/home/LocationSpread';
 import HomeAbout from '@/components/home/HomeAbout';
+import AppSection from '@/components/home/AppSection';
 
 const HomePage = () => {
   return (
@@ -26,6 +27,9 @@ const HomePage = () => {
 
         {/* ABOUT-SECTION */}
         <HomeAbout />
+
+        {/* APP-SECTION */}
+        <AppSection />
       </main>
     </>
   );
