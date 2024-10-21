@@ -17,6 +17,24 @@ const AppSection = () => {
           <h2 className='title'>{title}</h2>
           <p>{descriptions}</p>
         </div>
+
+        <div className='section-wrapper'>
+          <ul className='lab-ul'>
+            <li>
+              <a href='#'>
+                <img src='/src/assets/images/app/01.jpg' alt='app-store-logo' />
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img
+                  src='/src/assets/images/app/02.jpg'
+                  alt='google-play-store-logo'
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
