@@ -10,19 +10,19 @@ const btnText = 'Apply Now';
 const countList = [
   {
     id: 1,
-    iconName: 'icofont-duotone icofont-users-alt-4',
+    iconName: 'icofont-users-alt-4',
     count: '12600',
     text: 'Marchant Enrolled',
   },
   {
     id: 2,
-    iconName: 'icofont-duotone icofont-graduate-alt',
+    iconName: 'icofont-graduate-alt',
     count: '30',
     text: 'Certified Courses',
   },
   {
     id: 3,
-    iconName: 'icofont-duotone icofont-notification',
+    iconName: 'icofont-notification',
     count: '100',
     text: 'Rewards and GitCards',
   },
