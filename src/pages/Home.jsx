@@ -5,6 +5,7 @@ import HomeRegister from '@/components/home/HomeRegister';
 import LocationSpread from '@/components/home/LocationSpread';
 import HomeAbout from '@/components/home/HomeAbout';
 import AppSection from '@/components/home/AppSection';
+import HomeSponsor from '@/components/home/HomeSponsor';
 
 const HomePage = () => {
   return (
@@ -29,6 +30,9 @@ const HomePage = () => {
 
       {/* APP-SECTION */}
       <AppSection />
+
+      {/* SPONSORS-SECTION */}
+      <HomeSponsor />
     </main>
   );
 };
