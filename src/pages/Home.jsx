@@ -3,6 +3,7 @@ import HomeCategory from '@/components/home/HomeCategory';
 import CategoryShowCase from '@/components/home/CategoryShowCase';
 import HomeRegister from '@/components/home/HomeRegister';
 import LocationSpread from '@/components/home/LocationSpread';
+import HomeAbout from '@/components/home/HomeAbout';
 
 const HomePage = () => {
   return (
@@ -22,6 +23,9 @@ const HomePage = () => {
 
         {/* LOCATION-SPREAD */}
         <LocationSpread />
+
+        {/* ABOUT-SECTION */}
+        <HomeAbout />
       </main>
     </>
   );
