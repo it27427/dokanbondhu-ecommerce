@@ -500,6 +500,10 @@ header {
   color: $primarycolor;
 }
 
+.clients-section.style-2 .section-wrapper .clients .client-list .client-content {
+  border-color: $primarycolor;
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;
