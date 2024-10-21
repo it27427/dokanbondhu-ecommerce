@@ -1,4 +1,5 @@
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 const subTitle = 'Why Choose Us';
 const title = 'Become a Marchant';
@@ -32,7 +33,7 @@ const HomeAbout = () => {
     <section className='instructor-section style-2 padding-tb section-bg-ash'>
       <div className='container'>
         <div className='section-wrapper'>
-          <div className='row'>
+          <div className='row g-4 align-align-items-center justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1'>
             <div className='col'>
               {countList.map((counter) => (
                 <div key={counter.id} className='count-item'>
@@ -53,8 +54,26 @@ const HomeAbout = () => {
                 </div>
               ))}
             </div>
-            <div className='col'></div>
-            <div className='col'></div>
+
+            <div className='col'>
+              <div className='instructor-content'>
+                <h4 className='subtitle'>{subTitle}</h4>
+                <h2 className='title'>{title}</h2>
+                <p>{desc}</p>
+                <Link to='/sign-up' className='lab-btn'>
+                  {btnText}
+                </Link>
+              </div>
+            </div>
+
+            <div className='col'>
+              <figure>
+                <img
+                  src='/src/assets/images/instructor/01.png'
+                  alt='instructor-thumbnail'
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
