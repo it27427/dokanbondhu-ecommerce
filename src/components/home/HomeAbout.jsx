@@ -1,5 +1,5 @@
-import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
 
 const subTitle = 'Why Choose Us';
 const title = 'Become a Marchant';
