@@ -46,8 +46,8 @@ const ProductDetails = () => {
                               delay: 3000,
                               disableOnInteraction: false,
                             }}
-                            centeredSlides={true}
-                            spaceBetween={30}
+                            // centeredSlides={true}
+                            spaceBetween={0}
                             slidesPerView={1}
                             navigation={{
                               prevEl: '.pro-single-prev',

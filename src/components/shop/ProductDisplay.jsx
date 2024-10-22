@@ -6,9 +6,9 @@ const desc =
 const ProductDisplay = ({ item }) => {
   const { id, name, img, price, seller, ratingsCount, quantity } = item;
   const [prequantity, setQuantity] = useState(quantity);
-  const [coupon, setCoupon] = useState('');
   const [size, setSize] = useState('Select Size');
   const [color, setColor] = useState('Select Color');
+  const [coupon, setCoupon] = useState('');
 
   const handleSizeChange = (e) => setSize(e.target.value);
   const handleColorChange = (e) => setColor(e.target.value);
@@ -48,6 +48,12 @@ const ProductDisplay = ({ item }) => {
 
     // UPDATE LOCAL-STORAGE
     localStorage.setItem('cart', JSON.stringify(existingCart));
+
+    // RESET FORM-FIELDS
+    setQuantity(1);
+    setSize('Select Size');
+    setColor('Select Size');
+    setCoupon('');
   };
 
   return (
