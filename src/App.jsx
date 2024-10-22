@@ -9,6 +9,8 @@ import Footer from '@/components/global/Footer';
 import HomePage from '@/pages/Home';
 import AboutPage from '@/pages/About';
 import BlogPage from '@/pages/Blog';
+import ShopPage from '@/pages/Shop';
+/* ERROR-PAGE */
 import NotFoundPage from '@/pages/Error';
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='/shop' element={<ShopPage />} />
 
         {/* NOT-FOUND PAGE */}
         <Route path='/*' element={<NotFoundPage />} />
