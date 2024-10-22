@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import BannerSection from '@/components/global/BannerSection';
 
+import Data from '@/db/products.json';
+
 const showResults = 'Showing 01 - 12 of 139 Results';
 
 const Shop = () => {
   const [gridList, setGridList] = useState(true);
+  const [products, setProducts] = useState(Data);
+
+  console.log(products);
 
   return (
     <main className='main-section'>
