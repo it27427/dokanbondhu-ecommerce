@@ -9,11 +9,11 @@ const ShopCategory = ({
 }) => {
   return (
     <>
-      <div className='widget-header'>
-        <h5 className='ms-2'>All Categories</h5>
+      <div className='widget-header mb-2'>
+        <h5 className='ms-2 title'>All Categories</h5>
       </div>
 
-      <div>
+      <div className='mb-3'>
         <button
           type='button'
           className={`m-2 ${selectedCategory === 'All' ? 'bg-warning' : ''}`}
