@@ -9,6 +9,7 @@ import Footer from '@/components/global/Footer';
 import HomePage from '@/pages/Home';
 import AboutPage from '@/pages/About';
 import BlogPage from '@/pages/Blog';
+import ContactPage from '@/pages/Contact';
 import ShopPage from '@/pages/Shop';
 /* ERROR-PAGE */
 import NotFoundPage from '@/pages/Error';
@@ -26,6 +27,7 @@ const App = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='/contact' element={<ContactPage />} />
         <Route path='/shop' element={<ShopPage />} />
 
         {/* NOT-FOUND PAGE */}
