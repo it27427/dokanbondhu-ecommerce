@@ -5,6 +5,7 @@ import BannerSection from '@/components/global/BannerSection';
 import ProductCard from '@/components/shop/ProductCard';
 import Pagination from '@/components/shop/Pagination';
 import Search from '@/components/shop/Search';
+import ShopCategory from '@/components/shop/ShopCategory';
 
 const showResults = 'Showing 01 - 12 of 139 Results';
 
@@ -80,6 +81,7 @@ const Shop = () => {
             <div className='col-lg-4 col-12'>
               <aside>
                 <Search products={products} gridList={gridList} />
+                <ShopCategory />
               </aside>
             </div>
           </div>
