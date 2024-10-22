@@ -1,13 +1,10 @@
-import React from 'react';
+import BannerSection from '@/components/global/BannerSection';
 
 const Shop = () => {
   return (
     <main className='main-section'>
-      <section>
-        <div className='container'>
-          <h2>Shop Page</h2>
-        </div>
-      </section>
+      {/* BANNER-SECTION */}
+      <BannerSection title='Shop Page' currentPage='Shop' />
     </main>
   );
 };

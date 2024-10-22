@@ -1,13 +1,10 @@
-import React from 'react';
+import BannerSection from '@/components/global/BannerSection';
 
 const Contact = () => {
   return (
     <main className='main-section'>
-      <section>
-        <div className='container'>
-          <h2>Contact Page</h2>
-        </div>
-      </section>
+      {/* BANNER-SECTION */}
+      <BannerSection title='Contact Page' currentPage='Contact' />
     </main>
   );
 };

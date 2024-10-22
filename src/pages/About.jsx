@@ -1,7 +1,10 @@
+import BannerSection from '@/components/global/BannerSection';
+
 const AboutPage = () => {
   return (
     <main className='main-section'>
-      <h2>This is About Page</h2>
+      {/* BANNER-SECTION */}
+      <BannerSection title='About Page' currentPage='About' />
     </main>
   );
 };
