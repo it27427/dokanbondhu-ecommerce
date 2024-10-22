@@ -11,6 +11,7 @@ import AboutPage from '@/pages/About';
 import BlogPage from '@/pages/Blog';
 import ContactPage from '@/pages/Contact';
 import ShopPage from '@/pages/Shop';
+import ProductDetails from '@/pages/ProductDetails';
 /* ERROR-PAGE */
 import NotFoundPage from '@/pages/Error';
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/shop' element={<ShopPage />} />
+        <Route path='/shop/:id' element={<ProductDetails />} />
 
         {/* NOT-FOUND PAGE */}
         <Route path='/*' element={<NotFoundPage />} />
