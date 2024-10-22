@@ -28,6 +28,17 @@ const Shop = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   // FILTER PRODUCT BASED ON CATEGORY
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const menuItems = [...new Set(Data.map((Val) => Val.category))];
+
+  const filterItem = (currentCategory) => {
+    const newItem = Data.filter((newVal) => {
+      return newVal.category === currentCategory;
+    });
+
+    setSelectedCategory(currentCategory);
+    setProducts(newItem);
+  };
 
   return (
     <main className='main-section'>
@@ -81,7 +92,13 @@ const Shop = () => {
             <div className='col-lg-4 col-12'>
               <aside>
                 <Search products={products} gridList={gridList} />
-                <ShopCategory />
+                <ShopCategory
+                  filterItem={filterItem}
+                  setItem={setProducts}
+                  menuItems={menuItems}
+                  setProducts={setProducts}
+                  selectedCategory={selectedCategory}
+                />
               </aside>
             </div>
           </div>
