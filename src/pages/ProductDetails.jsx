@@ -99,7 +99,7 @@ const ProductDetails = () => {
 
             {/* RIGHT-SIDE */}
             <div className='col-lg-4 col-12'>
-              <aside className='ps-lg-4'>
+              <aside>
                 <PopularPost />
                 <Tags />
               </aside>
