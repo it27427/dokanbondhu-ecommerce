@@ -10,11 +10,11 @@ const BannerSection = ({ title, currentPage }) => {
               <h2 className='title'>{title}</h2>
 
               <nav aria-label='breadcrumb'>
-                <ol class='breadcrumb justify-content-center m-0'>
-                  <li class='breadcrumb-item'>
+                <ol className='breadcrumb justify-content-center m-0'>
+                  <li className='breadcrumb-item'>
                     <Link to='/'>Home</Link>
                   </li>
-                  <li class='breadcrumb-item active' aria-current='page'>
+                  <li className='breadcrumb-item active' aria-current='page'>
                     {currentPage}
                   </li>
                 </ol>
