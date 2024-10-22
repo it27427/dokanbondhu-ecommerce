@@ -7,6 +7,7 @@ import Pagination from '@/components/shop/Pagination';
 import Search from '@/components/shop/Search';
 import ShopCategory from '@/components/shop/ShopCategory';
 import PopularPost from '@/components/shop/PopularPost';
+import Tags from '@/components/shop/Tags';
 
 const showResults = 'Showing 01 - 12 of 139 Results';
 
@@ -101,6 +102,7 @@ const Shop = () => {
                   selectedCategory={selectedCategory}
                 />
                 <PopularPost />
+                <Tags />
               </aside>
             </div>
           </div>
