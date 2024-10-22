@@ -32,6 +32,13 @@ const Shop = () => {
                     >
                       <i className='icofont-ghost'></i>
                     </a>
+                    <a
+                      className='list'
+                      onClick={() => setGridList(!gridList)}
+                      role='button'
+                    >
+                      <i className='icofont-listine-dots'></i>
+                    </a>
                   </div>
                 </div>
               </article>
