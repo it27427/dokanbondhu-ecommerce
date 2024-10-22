@@ -26,6 +26,8 @@ const Shop = () => {
   // FUNCTION TO CHANGE CURRENT-PAGE
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  // FILTER PRODUCT BASED ON CATEGORY
+
   return (
     <main className='main-section'>
       {/* BANNER-SECTION */}
