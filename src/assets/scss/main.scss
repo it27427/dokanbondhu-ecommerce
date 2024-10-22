@@ -91,6 +91,7 @@ table,
 img,
 hgroup {
   margin: 0;
+  font-size: inherit;
 }
 
 // Heading styles
@@ -99,6 +100,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-size: inherit;
   font-weight: 700;
 }
 
@@ -107,6 +109,10 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+span {
+  font-size: 0.875rem;
 }
 
 .notfoundthumb {
@@ -561,6 +567,19 @@ footer.style-2 .footer-top .footer-item .footer-inner .footer-content .content u
 
 .widget.widget-tags ul.widget-wrapper li a.active, .widget.widget-tags ul.widget-wrapper li a:hover, .blog-single .section-wrapper .post-item .post-inner .post-content .tags-section .tags li a:hover, .blog-single .section-wrapper .post-item .post-inner .post-content .tags-section .tags li a .active, .blog-single .section-wrapper .post-item .post-inner .post-content blockquote, .course-side-cetagory .csc-title, .course-side-detail .csd-title, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping button, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select .select-icon, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon input[type=submit], .shop-cart .section-wrapper .cart-top table thead tr, .shop-single .review .review-content .review-showing .client-review .review-form form button, .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5::before, .shop-single .review .review-nav li.active, .shop-single .product-details .post-content form .lab-btn, .shop-page .shop-product-wrap .product-item .product-thumb .product-action-link a, .shop-page .shop-product-wrap .product-list-item .product-thumb .product-action-link a, .group-select-section, .clients-section.style-2 .section-wrapper .clients .client-list .client-thumb::after, .clients-section.style-2 .section-wrapper .clients .client-list .client-thumb::before, .feature-section.style-3 .section-wrapper .feature-register form .lab-btn:hover, .newsletters-section .newsletter-area .news-mass::after, .newsletters-section .newsletter-area .news-mass::before, .newsletters-section .newsletter-area .news-mass, .workshop-join .section-wrapper .workshop-title h5, .about-section.style-3 .about-left .about-left-content, .pageheader-section.style-2 .pageheader-content .course-category .course-offer, .banner-section .cbs-content-list ul li.ccl-shape a::after, .banner-section .cbs-content-list ul li.ccl-shape a, .menu-search-form form button, .header-bar span, .header-wrapper .menu-area .signup, .header-section.style-3 .header-top, .feature-item .feature-inner .feature-content .lab-btn-text span::after, .feature-item .feature-inner .feature-content .lab-btn-text span::before, .feature-item .feature-inner .feature-content .lab-btn-text span, .count-item .count-inner .count-icon i, .post-item.style-3 .post-inner .post-content .lab-btn:hover, .post-item .post-inner .post-footer .pf-right .comment-count, .course-item.style-3 .course-inner .course-content .lab-btn:hover, .course-item.style-3 .course-inner .course-thumb .course-info li span.price, .course-item .course-inner .course-price, .course-item .course-inner .course-content .course-category .course-cate a, .scrollToTop i, .cart-plus-minus .qtybutton:hover, .social-icons li a, .or, .clients-slider-nav:hover, .course-navi {
   background: $primarycolor;
+}
+
+.brandname {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: capitalize;
+  @include bg-and-color($blackcolor, $whitecolor);
+  border-radius: 10rem;
 }
 
 @media screen and (min-width: 62rem) {
