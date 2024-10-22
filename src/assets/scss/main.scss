@@ -532,6 +532,14 @@ footer.style-2 .footer-top .footer-item .footer-inner .footer-content .content u
   color: $primarycolor !important;
 }
 
+.text-warning {
+  color: $primarycolor !important;
+}
+
+.bg-warning {
+  background: $primarycolor !important;
+}
+
 @media screen and (min-width: 62rem) {
   header {
     height: 5rem;

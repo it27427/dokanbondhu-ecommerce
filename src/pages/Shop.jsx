@@ -4,6 +4,7 @@ import Data from '@/db/products.json';
 import BannerSection from '@/components/global/BannerSection';
 import ProductCard from '@/components/shop/ProductCard';
 import Pagination from '@/components/shop/Pagination';
+import Search from '@/components/shop/Search';
 
 const showResults = 'Showing 01 - 12 of 139 Results';
 
@@ -62,7 +63,7 @@ const Shop = () => {
                 </div>
 
                 {/* PRODUCT-CARDS */}
-                <ProductCard gridList={gridList} products={products} />
+                <ProductCard gridList={gridList} products={currentProducts} />
 
                 {/* PAGINATION */}
                 <Pagination
@@ -74,7 +75,11 @@ const Shop = () => {
               </article>
             </div>
 
-            <div className='col-lg-4 col-12'></div>
+            <div className='col-lg-4 col-12'>
+              <aside>
+                <Search products={products} gridList={gridList} />
+              </aside>
+            </div>
           </div>
         </div>
       </section>
