@@ -29,6 +29,7 @@ const ProductDetails = () => {
         title='Our Shop Single'
         currentPage='Shop&nbsp; / &nbsp;Product Details'
       />
+
       <section className='shop-single padding-tb aside-bg'>
         <div className='container'>
           <div className='row g-4 justify-content-center'>
