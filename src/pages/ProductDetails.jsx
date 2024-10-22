@@ -8,6 +8,7 @@ import BannerSection from '@/components/global/BannerSection';
 import ProductDisplay from '@/components/shop/ProductDisplay';
 import PopularPost from '@/components/shop/PopularPost';
 import Tags from '@/components/shop/Tags';
+import Review from '@/components/shop/Review';
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
@@ -91,7 +92,7 @@ const ProductDetails = () => {
 
                 {/* REVIEWS */}
                 <div className='review'>
-                  <h5>Review</h5>
+                  <Review />
                 </div>
               </article>
             </div>
