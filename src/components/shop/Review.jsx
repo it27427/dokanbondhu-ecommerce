@@ -145,11 +145,37 @@ const Review = () => {
         {/* DESCRIPTION-SHOWING */}
         <div className='description'>
           <p>
-            Customers like the comfort, style, and quality of the shoes. They
-            mention that they're super comfortable, support their ankles, and
-            have good arch support. Some say the price is reasonable. However,
-            some dislike the stiffness and have different opinions on the fit.
+            Take the inspiration of being an icon into all you do and be the
+            movement you want to make in the world with these leather sneakers
+            for men and women. Welcome your legacy in Reebok men's and women's
+            fashion sneakers. Customers like the comfort, style, and quality of
+            the shoes. They mention that they're super comfortable, support
+            their ankles, and have good arch support. Some say the price is
+            reasonable. However, some dislike the stiffness and have different
+            opinions on the fit.
           </p>
+
+          <div className='post-item'>
+            <figure className='post-thumb'>
+              <img src='/src/assets/images/shop/01.jpg' alt='post-thumb' />
+            </figure>
+
+            <div className='post-content'>
+              <ul className='lab-ul'>
+                <li>Take the inspiration of being an icon into all you do</li>
+                <li>These men's and women's sneakers are a classic icon</li>
+                <li>
+                  These men's and women's sneakers keep you moving comfortably
+                  all day
+                </li>
+                <li>There is no other version of you, so change nothing</li>
+                <li>
+                  Ideal for daily, casual, and athleisure wear, these casual
+                  shoes for men and women
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
