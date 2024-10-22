@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import BannerSection from '@/components/global/BannerSection';
-
 import Data from '@/db/products.json';
+
+import BannerSection from '@/components/global/BannerSection';
+import ProductCard from '@/components/shop/ProductCard';
 
 const showResults = 'Showing 01 - 12 of 139 Results';
 
 const Shop = () => {
   const [gridList, setGridList] = useState(true);
   const [products, setProducts] = useState(Data);
-
-  console.log(products);
 
   return (
     <main className='main-section'>
@@ -45,6 +44,10 @@ const Shop = () => {
                       <i className='icofont-listine-dots'></i>
                     </a>
                   </div>
+                </div>
+
+                <div className=''>
+                  <ProductCard gridList={gridList} products={products} />
                 </div>
               </article>
             </div>

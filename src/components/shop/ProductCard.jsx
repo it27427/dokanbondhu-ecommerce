@@ -1,9 +1,22 @@
 import React from 'react';
 
-const ProductCard = () => {
+const ProductCard = ({ gridList, products }) => {
+  console.log(products);
   return (
-    <div>
-      <h2>Card</h2>
+    <div
+      className={`shop-product-wrap row justify-content-center ${
+        gridList ? 'grid' : 'list'
+      }`}
+    >
+      {products.map((product) => (
+        <div key={product.id} className='col-lg-4 col-md-6 col-12'>
+          <div className='product-item'>
+            <figure className='product-thumb'>
+              <img src={product.img} alt={product.name} />
+            </figure>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
