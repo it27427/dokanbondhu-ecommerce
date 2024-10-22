@@ -11,6 +11,7 @@ import '@/assets/css/animate.css';
 import '@/assets/css/icofont.min.css';
 import '@/assets/css/magnific-popup.css';
 import '@/assets/css/style.min.css';
+import '@/assets/css/app.css';
 
 // REACT-TOOLTIP
 import 'react-tooltip/dist/react-tooltip.css';

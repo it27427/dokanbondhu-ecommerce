@@ -3,12 +3,27 @@ import Data from '@/db/products.json';
 
 import BannerSection from '@/components/global/BannerSection';
 import ProductCard from '@/components/shop/ProductCard';
+import Pagination from '@/components/shop/Pagination';
 
 const showResults = 'Showing 01 - 12 of 139 Results';
 
 const Shop = () => {
   const [gridList, setGridList] = useState(true);
   const [products, setProducts] = useState(Data);
+
+  // PAGINATION
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  // FUNCTION TO CHANGE CURRENT-PAGE
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <main className='main-section'>
@@ -46,9 +61,16 @@ const Shop = () => {
                   </div>
                 </div>
 
-                <div className=''>
-                  <ProductCard gridList={gridList} products={products} />
-                </div>
+                {/* PRODUCT-CARDS */}
+                <ProductCard gridList={gridList} products={products} />
+
+                {/* PAGINATION */}
+                <Pagination
+                  productsPerPage={productsPerPage}
+                  totalProducts={products.length}
+                  paginate={paginate}
+                  activePage={currentPage}
+                />
               </article>
             </div>
 
