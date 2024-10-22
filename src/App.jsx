@@ -12,6 +12,9 @@ import BlogPage from '@/pages/Blog';
 import ContactPage from '@/pages/Contact';
 import ShopPage from '@/pages/Shop';
 import ProductDetails from '@/pages/ProductDetails';
+import Login from '@/pages/Login';
+import Register from '@/pages/Register';
+import Cart from '@/pages/Cart';
 /* ERROR-PAGE */
 import NotFoundPage from '@/pages/Error';
 
@@ -31,6 +34,10 @@ const App = () => {
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/shop' element={<ShopPage />} />
         <Route path='/shop/:id' element={<ProductDetails />} />
+        <Route path='/cart' element={<Cart />} />
+
+        <Route path='/sign-in' element={<Login />} />
+        <Route path='/sign-up' element={<Register />} />
 
         {/* NOT-FOUND PAGE */}
         <Route path='/*' element={<NotFoundPage />} />
