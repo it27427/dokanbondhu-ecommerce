@@ -49,7 +49,20 @@ const tagsList = [
 ];
 
 const Tags = () => {
-  return <div>Tags</div>;
+  return (
+    <div className='widget widget-tags'>
+      <div className='widget-header'>
+        <h5 className='title'>{title}</h5>
+      </div>
+      <ul className='widget-wrapper'>
+        {tagsList.map((tag) => (
+          <li key={tag.id}>
+            <a href={tag.href}>{tag.text}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default Tags;
