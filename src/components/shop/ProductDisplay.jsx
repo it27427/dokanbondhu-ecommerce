@@ -24,6 +24,7 @@ const ProductDisplay = ({ item }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const product = {
       id: id,
       img: img,
@@ -38,6 +39,15 @@ const ProductDisplay = ({ item }) => {
     const existingProductIndex = existingCart.findIndex(
       (item) => item.id === id
     );
+
+    if (existingProductIndex !== -1) {
+      existingCart[existingProductIndex].quantity += prequantity;
+    } else {
+      existingCart.push(product);
+    }
+
+    // UPDATE LOCAL-STORAGE
+    localStorage.setItem('cart', JSON.stringify(existingCart));
   };
 
   return (
