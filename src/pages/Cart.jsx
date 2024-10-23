@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import BannerSection from '@/components/global/BannerSection';
+import Checkout from '@/components/cart/Checkout';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -129,7 +130,82 @@ const Cart = () => {
               </table>
             </div>
 
-            <div className="cart-bottom"></div>
+            <div className="cart-bottom">
+              <div className="cart-checkout-box">
+                <form className="coupon">
+                  <input type="text" className='cart-page-input-text' name="coupon" id="coupon" placeholder='Coupon Code' />
+                  <input type='submit' value='Apply Coupon' />
+                </form>
+
+                <form className="cart-checkout">
+                  <button type='submit'>Update Cart</button>
+                  <Checkout />
+                </form>
+              </div>
+
+              <div className="shiping-box">
+                <div className="row g-4">
+                  <div className="col-md-6 col-12">
+                    <div className="calculate-shiping">
+                      <h3>Calculate Shipping</h3>
+                      
+                      <div className="outline-select">
+                        <select>
+                          <option value="uk">United Kingdom (UK)</option>
+                          <option value="bd">Bangladesh</option>
+                          <option value="in">India</option>
+                          <option value="ch">China</option>
+                          <option value="de">Denmark</option>
+                        </select>
+
+                        <span className="select-icon">
+                          <i className="icofont-rounded-down"></i>
+                        </span>
+                      </div>
+
+                      <div className="outline-select shipping-select">
+                        <select>
+                          <option value="dhaka">Dhaka</option>
+                          <option value="mymensingh">Mymensingh</option>
+                          <option value="dinajpur">Dinajpur</option>
+                          <option value="sylhet">Sylhet</option>
+                          <option value="khulna">Khulna</option>
+                        </select>
+
+                        <span className="select-icon">
+                          <i className="icofont-rounded-down"></i>
+                        </span>
+                      </div>
+
+                      <input type="text" name="postalcode" id="postalcode" className='cart-page-input-text' placeholder='PostCode/ZIP *' />
+                    
+                      <button type="submit">Update Address</button>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6 col-12">
+                    <div className="cart-overview">
+                      <h3>Cart Totals</h3>
+
+                      <ul className="lab-ul">
+                        <li>
+                          <span className='pull-left'>Cart Subtotal</span>
+                          <p className='pull-right'>$ {cartSubTotal}</p>
+                        </li>
+                        <li>
+                          <span className='pull-left'>Shipping and Handling</span>
+                          <p className='pull-right'>Free Shipping</p>
+                        </li>
+                        <li>
+                          <span className='pull-left'>Order Total</span>
+                          <p className='pull-right'>$ {orderTotal.toFixed(2)}</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
