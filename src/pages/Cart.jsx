@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import BannerSection from '@/components/global/BannerSection';
 import { Link } from 'react-router-dom';
+
+import BannerSection from '@/components/global/BannerSection';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -73,6 +74,7 @@ const Cart = () => {
                     <th className='cat-edit'>Edit</th>
                   </tr>
                 </thead>
+                
                 <tbody>
                   {
                     cartItems.map((item, i) => (
@@ -93,7 +95,6 @@ const Cart = () => {
                         <td className="cat-quantity">
                           <div className='cart-plus-minus'>
                             <button
-                              type='button'
                               onClick={() => handleDecrese(item)}
                               className='dec qtybutton d-flex align-items-center justify-content-center'
                             >
@@ -102,14 +103,10 @@ const Cart = () => {
                             <input
                               type='text'
                               name='qtybutton'
-                              id='qtybutton'
-                              placeholder='0'
                               className='cart-plus-minus-box'
                               value={item.quantity}
-                              onChange={(e) => setQuantity(parseInt(e.target.value, 10))}
                             />
                             <button
-                              type='button'
                               onClick={() => handleIncrese(item)}
                               className='inc qtybutton d-flex align-items-center justify-content-center'
                             >
@@ -118,10 +115,10 @@ const Cart = () => {
                           </div>
                         </td>
 
-                        <td className='cat-toprice'>${calculateTotalPrice(item)}</td>
+                        <td className='cat-toprice'>${parseInt(calculateTotalPrice(item))}</td>
 
                         <td className='cat-edit'>
-                          <button type='button' className='bg-transparent text-warning' onClick={() => handleRemoveItem(item)}>
+                          <button onClick={() => handleRemoveItem(item)} type='button' className='bg-transparent text-warning'>
                             <i className="icofont-ui-delete"></i>
                           </button>
                         </td>
@@ -131,6 +128,8 @@ const Cart = () => {
                 </tbody>
               </table>
             </div>
+
+            <div className="cart-bottom"></div>
           </div>
         </div>
       </section>
