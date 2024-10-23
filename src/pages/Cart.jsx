@@ -72,7 +72,7 @@ const Cart = () => {
                     <th className='cat-price'>Price</th>
                     <th className='cat-quantity'>Quantity</th>
                     <th className='cat-toprice'>Total</th>
-                    <th className='cat-edit'>Edit</th>
+                    <th className='cat-edit'>Action</th>
                   </tr>
                 </thead>
                 
@@ -116,7 +116,7 @@ const Cart = () => {
                           </div>
                         </td>
 
-                        <td className='cat-toprice'>${parseInt(calculateTotalPrice(item))}</td>
+                        <td className='cat-toprice'>${calculateTotalPrice(item)}</td>
 
                         <td className='cat-edit'>
                           <button onClick={() => handleRemoveItem(item)} type='button' className='bg-transparent text-warning'>
